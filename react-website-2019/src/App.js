@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import {Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+import Main from './components/main';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -8,22 +10,23 @@ function App() {
         <Layout>
             <Header title="Ryan Mills" scroll>
                 <Navigation>
-                    <a href="/about">About Me</a>
-                    <a href="/projects">Projects</a>
-                    <a href="/myBlog">Blog</a>
-                    <a href="/contact">Contact</a>
+                    <Link to="/aboutme">About Me</Link>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="/myBlog">Blog</Link>
+                    <Link to="/contact">Contact</Link>
                 </Navigation>
             </Header>
             <Drawer title="Ryan Mills">
                 <Navigation>
-                  <a href="/about">About Me</a>
-                  <a href="/projects">Projects</a>
-                  <a href="/myBlog">Blog</a>
-                  <a href="/contact">Contact</a>
+                <Link to="/aboutme">About Me</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/myBlog">Blog</Link>
+                <Link to="/contact">Contact</Link>
                 </Navigation>
             </Drawer>
             <Content>
                 <div className="page-content" />
+                <Main/>
             </Content>
         </Layout>
     </div>
