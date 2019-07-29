@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
-import { Grid, Cell } from 'react-mdl';
+//import { Grid, Cell } from 'react-mdl';
+
+
+
 
 class Landing extends Component {
   render() {
     return(
-      <div style={{width: '100%', margin: 'auto'}}>
-        <Grid className="landing-grid">
-          <Cell col={12}>
-          <img src="https://external-preview.redd.it/rc-eT1150M_U35EUVHaJxaWXRSze4ekXbfoK1wonKh0.gif?format=mp4&s=26721f3cfbf3909eb1515c5b716a2340281744d9"
-           alt="milky way" />
-          </Cell>
-        </Grid>
+      <div>
+      <video autoPlay loop
+          style={{
+            objectFit: 'cover',
+            width: '100%',
+            height: '100%',
+          }}
+          src="https://res.cloudinary.com/dlyhbsnfb/video/upload/v1564364034/milky-way/milky_way_dlopql.mp4"
+        />
+        <div class="banner-text">
+          <h1>Full Stack Web Developer</h1>
+        </div>
       </div>
-    )
+    );
   }
 }
 
