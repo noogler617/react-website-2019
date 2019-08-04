@@ -3,6 +3,7 @@ import './App.css';
 import {Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Layout>
             <Header className="header-color" title="Ryan Mills" scroll>
                 <Navigation>
+
                     <Link to="/aboutme">About Me</Link>
                     <Link to="/projects">Projects</Link>
                     <Link to="/music">Music</Link>
@@ -17,8 +19,9 @@ function App() {
                     <Link to="/myBlog">Blog</Link>
                 </Navigation>
             </Header>
-            <Drawer title="Ryan Mills">
+            <Drawer title="Ryan Mills" href="/">
                 <Navigation>
+
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/music">Music</Link>
