@@ -7,7 +7,7 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import { BrowserRouter } from 'react-router-dom';
 
-import { Button } from 'reactstrap';
+//import { Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
