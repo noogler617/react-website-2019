@@ -2,7 +2,9 @@
   "name": "react-website-2019",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3000/contact"
   "dependencies": {
+    "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "eslint-utils": "^1.4.2",
     "react": "^16.9.0",
